@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI聊天</title>
+    <link rel="stylesheet" href="/frontend/styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-frame">
+            <div class="notch"></div>
+            <div class="app-container">
+                <div class="app-header">
+                    <div class="game-stats">
+                        <span class="stat-item">💰 0</span>
+                        <span class="stat-item">⭐ 0</span>
+                    </div>
+                </div>
+                <div class="chat-container" data-background="/frontend/images/chat-bg.jpg">
+                    <div id="messageContainer" class="chat-messages">
+                        <!-- 删除预定义的开场白，保持空的消息容器 -->
+                    </div>
+                </div>
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="输入消息...">
+                    <button id="sendButton">
+                        <svg viewBox="0 0 24 24" class="send-icon">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/frontend/scripts/chat.js"></script>
+    <script type="module" src="/frontend/scripts/game-systems.js"></script>
+    <script type="module" src="/frontend/scripts/random-events.js"></script>
+    <script type="module" src="/frontend/scripts/ui.js"></script>
+    <script type="module" src="/frontend/scripts/animations.js"></script>
+</body>
+</html> 
